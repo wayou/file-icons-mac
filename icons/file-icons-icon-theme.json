@@ -63,14 +63,19 @@
   ],
   "iconDefinitions": {
     "_folder": {
-      "fontCharacter": "\\f016",
-      "fontColor": "#cccccc",
-      "fontId": "octicons"
+      "iconPath": "./icons/GenericFolderIcon.png"
+      // "fontCharacter": "\\f016",
+      // "fontColor": "#cccccc",
+      // "fontId": "octicons"
+    },
+    "_folder_open": {
+      "iconPath": "./icons/OpenFolderIcon.png"
     },
     "_folder_l": {
-      "fontCharacter": "\\f016",
-      "fontColor": "#6c6c6c",
-      "fontId": "octicons"
+      "iconPath": "./icons/GenericFolderIcon.png",
+      // "fontCharacter": "\\f016",
+      // "fontColor": "#6c6c6c",
+      // "fontId": "octicons"
     },
     "_file": {
       "fontCharacter": "\\f011",
@@ -18465,9 +18470,9 @@
   },
   "file": "_file",
   "folder": "_folder",
-  "folderExpanded": "_folder",
-  "rootFolder": "_fd_root",
-  "rootFolderExpanded": "_fd_root_open",
+  "folderExpanded": "_folder_open",
+  "rootFolder": "_folder",
+  "rootFolderExpanded": "_folder_open",
   "fileExtensions": {
     "1": "_manpage_dark-green",
     "2": "_manpage_dark-green",

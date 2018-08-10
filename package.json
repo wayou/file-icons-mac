@@ -1,22 +1,22 @@
 {
-    "name": "file-icons",
-    "displayName": "file-icons",
-    "description": "File-specific icons in VSCode for improved visual grepping.",
-    "version": "1.0.11",
-    "publisher": "file-icons",
+    "name": "file-icons-mac",
+    "displayName": "file-icons-mac",
+    "description": "same as `file-icons` but with the classic blue mac folder icon",
+    "version": "1.0.0",
+    "publisher": "wayou",
     "engines": {
         "vscode": "^1.5.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/file-icons/vscode"
+        "url": "https://github.com/wayou/file-icons-mac"
     },
     "bugs": {
-        "url": "https://github.com/file-icons/vscode/issues",
+        "url": "https://github.com/wayou/file-icons-mac/issues",
         "email": "dan@nocturnalcode.com"
     },
     "preview": true,
-    "homepage": "https://github.com/file-icons/vscode",
+    "homepage": "https://github.com/wayou/file-icons-mac",
     "icon": "icon.png",
     "categories": [
         "Themes",
@@ -25,13 +25,13 @@
     "contributes": {
         "iconThemes": [
             {
-                "id": "file-icons",
-                "label": "File Icons",
+                "id": "file-icons-mac",
+                "label": "File Icons Mac",
                 "path": "./icons/file-icons-icon-theme.json"
             },
             {
-                "id": "file-icons-colourless",
-                "label": "File Icons (Colourless)",
+                "id": "file-icons-colourless-mac",
+                "label": "File Icons (Colourless) Mac",
                 "path": "./icons/file-icons-colourless-icon-theme.json"
             }
         ]
