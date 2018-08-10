@@ -2,7 +2,7 @@
     "name": "file-icons-mac",
     "displayName": "file-icons-mac",
     "description": "same as `file-icons` but with the classic blue mac folder icon",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "wayou",
     "engines": {
         "vscode": "^1.5.0"
@@ -15,7 +15,6 @@
         "url": "https://github.com/wayou/file-icons-mac/issues",
         "email": "dan@nocturnalcode.com"
     },
-    "preview": true,
     "homepage": "https://github.com/wayou/file-icons-mac",
     "icon": "icon.png",
     "categories": [

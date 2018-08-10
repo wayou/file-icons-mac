@@ -27,6 +27,7 @@ let fontMap = {
 // hardcoded files and folder, i.e ones that are default in atom
 const hardcoded = {
     "_folder": "\\f016",
+    "_folder_open": "\\f016",
     "_file": "\\f011",
     "_icon-file-text": "\\f011",
     "_icon-file-binary": "\\f094",
@@ -38,7 +39,25 @@ const hardcoded = {
 };
 
 for(let key in hardcoded) {
-    let value = hardcoded[key];
+    let value = hardcoded[key];  
+    if(key==='_folder'|| key==='_fd_root'){
+        icons[key]={
+            "iconPath": "./icons/GenericFolderIcon.png"
+        }
+        icons[key + '_l'] = {
+            "iconPath": "./icons/GenericFolderIcon.png"
+        };
+        continue;
+    }  
+    if(key==='_folder_open' || key ==='_fd_root_open'){
+        icons[key]={
+            "iconPath": "./icons/OpenFolderIcon.png"
+        }
+        icons[key + '_l'] = {
+            "iconPath": "./icons/OpenFolderIcon.png"
+        };
+        continue;
+    }  
     icons[key] = {
         'fontCharacter': value,
         'fontColor': darkFontColour,
@@ -328,7 +347,8 @@ root.fonts = fonts;
 root.iconDefinitions = icons;
 root.file = '_file';
 root.folder = "_folder";
-root.folderExpanded = "_folder";
+root.folderOpen = "_folder_open";
+root.folderExpanded = "_folder_open";
 root.rootFolder = "_fd_root",
 root.rootFolderExpanded = "_fd_root_open",
 root.fileExtensions = extensions;
@@ -339,7 +359,7 @@ root.languageIds = languages;
 root.light = {
     "file": '_file_l',
     "folder": "_folder_l",
-    "folderExpanded": "_folder_l",
+    "folderExpanded": "_folder_open",
     "fileExtensions": extensions_l,
     "fileNames": files_l,
     "folderNames": folders_l,
